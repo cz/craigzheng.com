@@ -1,0 +1,511 @@
+/*
+----------------------------------------------------------------
+	CRAIGZHENG.COM
+		main.css
+		by Craig Zheng
+		v 1.0
+----------------------------------------------------------------
+	CONTENTS
+		1. Utilities
+		2. Base rules
+		3. Layout rules
+		4. Framework rules
+		5. Module rules
+		6. Context rules
+		7. State rules
+		8. Media rules
+----------------------------------------------------------------
+	COLORS
+		Dark blue 		#2a363b, rgb(42,54,59)
+		Red				#c63542
+================================================================
+	1. UTILITIES
+	   imports, web fonts
+-----------------------------------------------------------------
+*/
+
+@font-face {
+	font-family: 'OpenSans';
+	src: url('type/OpenSans-Light-webfont.eot');
+	src: url('type/OpenSans-Light-webfont.eot?#iefix') format('embedded-opentype'),
+		url('type/OpenSans-Light-webfont.woff') format('woff'),
+		url('type/OpenSans-Light-webfont.ttf') format('truetype'),
+		url('type/OpenSans-Light-webfont.svg#opensanslight-webfont') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'OpenSans';
+	src: url('type/OpenSans-LightItalic-webfont.eot');
+	src: url('type/OpenSans-LightItalic-webfont.eot?#iefix') format('embedded-opentype'),
+		url('type/OpenSans-LightItalic-webfont.woff') format('woff'),
+		url('type/OpenSans-LightItalic-webfont.ttf') format('truetype'),
+		url('type/OpenSans-LightItalic-webfont.svg#opensanslightitalic-webfont') format('svg');
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'OpenSans';
+	src: url('type/OpenSans-Regular-webfont.eot');
+	src: url('type/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+		url('type/OpenSans-Regular-webfont.woff') format('woff'),
+		url('type/OpenSans-Regular-webfont.ttf') format('truetype'),
+		url('type/OpenSans-Regular-webfont.svg#opensansregular-webfont') format('svg');
+	font-weight: bold;
+	font-style: normal;
+}
+
+
+/*
+-----------------------------------------------------------------
+    2. BASE RULES
+       normalize.css, elements, attribute & pseudo-selectors
+-----------------------------------------------------------------
+*/
+
+article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block}audio,canvas,video{display:inline-block;*display:inline;*zoom:1}audio:not([controls]){display:none;height:0}[hidden]{display:none}html{font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}html,button,input,select,textarea{font-family:sans-serif}body{margin:0}a:focus{outline:thin dotted}a:active,a:hover{outline:0}h1{font-size:2em;margin:.67em 0}h2{font-size:1.5em;margin:.83em 0}h3{font-size:1.17em;margin:1em 0}h4{font-size:1em;margin:1.33em 0}h5{font-size:.83em;margin:1.67em 0}h6{font-size:.67em;margin:2.33em 0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}blockquote{margin:1em 40px}dfn{font-style:italic}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}mark{background:#ff0;color:#000}p,pre{margin:1em 0}code,kbd,pre,samp{font-family:monospace,serif;_font-family:'courier new',monospace;font-size:1em}pre{white-space:pre;white-space:pre-wrap;word-wrap:break-word}q{quotes:none}q:before,q:after{content:'';content:none}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}dl,menu,ol,ul{margin:1em 0}dd{margin:0 0 0 40px}menu,ol,ul{padding:0 0 0 40px}nav ul,nav ol{list-style:none;list-style-image:none}img{border:0;-ms-interpolation-mode:bicubic}svg:not(:root){overflow:hidden}figure{margin:0}form{margin:0}fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0;white-space:normal;*margin-left:-7px}button,input,select,textarea{font-size:100%;margin:0;vertical-align:baseline;*vertical-align:middle}button,input{line-height:normal}button,select{text-transform:none}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer;*overflow:visible}button[disabled],html input[disabled]{cursor:default}input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0;*height:13px;*width:13px}input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}textarea{overflow:auto;vertical-align:top}table{border-collapse:collapse;border-spacing:0}
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html {
+	font-family: OpenSans, sans-serif;
+	font-size: 62.5%;
+}
+
+body {
+	padding-top: 413px;
+	background: url('images/bg.png') repeat;
+	color: #2a363b;
+	font-size: 20px;
+	font-size: 2rem;
+}
+
+h1, h2, h3 {
+	margin: 0;
+}
+
+h1, h2 {
+	font-weight: normal;
+}
+
+h1 {
+	font-size: 80px;
+	font-size: 8rem;
+}
+
+h2 {
+	font-size: 40px;
+	font-size: 4rem;
+}
+
+h3 {
+	font-size: 20px;
+	font-size: 2rem;
+}
+
+a {
+	color: #c63542;
+}
+
+a:hover {
+	color: #eb6173;
+}
+
+p {
+	margin: 0 0 1em;
+}
+
+/*
+-----------------------------------------------------------------
+	3. LAYOUT RULES
+	   positioning, sizes
+-----------------------------------------------------------------
+*/
+
+header, section, footer {
+	position: relative;
+	clear: both;
+	padding: 2em 15%;
+}
+
+header {
+	position: fixed;
+	top: 0; left: 0;
+	width: 100%;
+	z-index: 1;
+	background: url('images/bg.png') repeat;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+section {
+	
+}
+
+	section ul {
+		padding: 0;
+	}
+
+		section li {
+			list-style: none;
+		}
+
+		section.qualities li {
+			position: relative;
+			padding: 1em;
+			margin: 1em 0;
+			padding-left: 30%;
+			background-color: #324146;
+			-webkit-border-radius: 2px;
+			-moz-border-radius: 2px;
+			border-radius: 2px;
+			box-shadow: 0 0 2px #232c30;
+		}
+
+		section.qualities li h3 {
+			position: absolute;
+			top: 20px; left: 20px;
+			font-size: 24px;
+			font-size: 2.4rem;
+			width: 20%;
+		}
+
+		section.qualities li p {
+			margin: 0;
+		}
+
+	section.skills, section.skills ul, section.skills li {
+		float: left;
+	}
+		section.skills ul {
+			width: 100%;
+			margin-right: -1em;
+		}
+
+		.additional-skills {
+			display: none;
+			margin-top: -1em;
+		}
+
+		section.skills li {
+			width: 33.334%;
+		}
+
+			section.skills li h3 {
+				height: 4em;
+				margin: .5em 1em .5em 0;
+				padding: .75em;
+				border: 1px solid #d8d8d8;
+				-webkit-border-radius: 2px;
+				-moz-border-radius: 2px;
+				border-radius: 2px;
+				background: #ececec;
+				box-shadow: 0 0 1px #bac6cb;
+			}
+
+	section.accomplishments li {
+		padding: 1em 0;
+		border-bottom: 1px solid #b33f49;
+	}
+
+		section.accomplishments li div {
+			display: none;
+		}
+
+/*
+-----------------------------------------------------------------
+	4. FRAMEWORK RULES
+	   sitewide interface elements
+-----------------------------------------------------------------
+*/
+
+header {
+	text-align: center;
+}
+
+header .photo {
+	width: 155px;
+	height: 155px;
+	margin: 0 auto;
+	background: url('images/cz.jpg') no-repeat;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+header h1 {
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+header p {
+	color: #cc4154;
+	margin: .25em 0 .5em;
+}
+
+header ul {
+	padding: 0;
+	margin: 0;
+}
+
+	header li {
+		display: inline;
+	}
+
+	header li {
+		margin-right: .5em;
+	}
+
+.qualities, .samples {
+	background: #2a363b;
+	color: #e9ebe4;
+}
+
+.accomplishments {
+	/* TODO: fallback */
+	background: rgba(198,53,66,.9);
+	color: #fff;
+}
+	.accomplishments li h3 {
+		padding-left: 24px;
+		background: url('images/caret.png') no-repeat 0px 7px;
+		cursor: pointer;
+	}
+	.accomplishments li.expanded h3 {
+		background-position: 0px -68px;
+	}
+	.accomplishments div {
+		padding: .75em;
+		margin-top: 1em;
+		background: #ba3f4a;
+		-webkit-border-radius: 2px;
+		-moz-border-radius: 2px;
+		border-radius: 2px;
+		color: #ffe5e8;
+	}
+	.accomplishments div p:last-child {
+		margin: 0;
+	}
+	.accomplishments a {
+		color: #fff;
+		font-weight: bold;
+		text-decoration: none;
+	}
+	.accomplishments a:hover {
+		border-bottom: 1px dotted #fff;
+	}
+
+.samples h2 a {
+	color: #fff;
+	text-decoration: none;
+}
+	.samples h2 a:after {
+		content: " →";
+	}
+
+	.samples h2 a:hover {
+		color: #c7d3d7;
+		border-bottom: 1px dotted #c7d3d7;
+	}
+
+footer {
+	float: left;
+	width: 100%;
+}
+
+	footer > div {
+		float: left;
+		width: 50%;
+		margin: 2em 0;
+		padding: 0 2em 0 0;
+	}
+
+	footer ul {
+		padding: 0;
+		font-size: 16px;
+		font-size: 1.6rem;
+	}
+
+	footer h3 {
+		padding-bottom: .5em;
+		border-bottom: 1px solid #d8d8d8;
+	}
+
+	footer li {
+		list-style: none;
+		margin: .5em 0;
+	}
+
+	footer ul h4 {
+		margin: 0;
+	}
+
+/*
+-----------------------------------------------------------------
+	5. MODULE RULES
+	   reusable module styles
+-----------------------------------------------------------------
+*/
+
+.date {
+	display: block;
+	color: #5b7580;
+	margin-right: .5em;
+}
+
+.expand {
+	clear: both;
+	padding: 1em 0;
+	text-align: center;
+	border-top: 1px solid #d2d3d3;
+}
+
+/*
+-----------------------------------------------------------------
+	6. CONTEXT RULES
+	   section/context-specific styles
+-----------------------------------------------------------------
+*/
+
+/*
+-----------------------------------------------------------------
+	7. STATE RULES
+	   behaviors, etc
+-----------------------------------------------------------------
+*/
+
+.preload * {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+}
+
+.scrolled {
+	padding-top: 160px;
+}
+
+.scrolled header {
+	padding-top: 1em;
+	padding-bottom: 1em;
+	box-shadow: 0 1px 20px -4px #000;
+}
+
+	.scrolled header h1 {
+		float: left;
+		font-size: 42px;
+		font-size: 4.2rem;
+	}
+
+	.scrolled .photo {
+		float: right;
+		width: 60px;
+		height: 60px;
+		background-image: url('images/cz2.jpg');
+	}
+
+	.scrolled header ul {
+		float: right;
+		margin: 1em;
+	}
+
+	.scrolled header li img {
+		margin-right: .5em;
+	}
+
+	.scrolled header p {
+		display: none;
+	}
+
+/*
+-----------------------------------------------------------------
+	8. MEDIA RULES
+	   viewport/device constraints
+-----------------------------------------------------------------
+*/
+
+@media all and (max-width: 1050px) {
+	header, section, footer {
+		padding-left: 10%;
+		padding-right: 10%;
+	}
+	body {
+		padding-top: 418px;
+	}
+	.scrolled header {
+		text-align: left;
+	}
+	.scrolled header .photo {
+		float: right;
+		margin: 0;
+	}
+	section.qualities li {
+		padding: 1em;
+	}
+	section.qualities li h3 {
+		position: static;
+		padding-bottom: .25em;
+	}
+	section.skills li {
+		width: 50%;
+	}
+}
+
+@media all and (max-width: 700px) {
+	body {
+		padding-top: 390px;
+	}
+	header h1 {
+		font-size: 40px;
+		font-size: 4rem;
+	}
+	.scrolled header .photo {
+		display: none;
+	}
+	.scrolled header ul {
+		margin: 1em 0;
+	}
+	.scrolled header li {
+		margin: 0;
+	}
+	footer div {
+		float: none;
+		width: 100%;
+	}
+}
+
+@media all and (max-width: 480px) {
+	body {
+		padding-top: 363px;
+	}
+	header, section, footer {
+		padding-left: 6%;
+		padding-right: 6%;
+	}
+	.scrolled header h1 {
+		font-size: 30px;
+		font-size: 3rem;
+		line-height: 60px;
+	}
+	section.skills, section.skills ul, section.skills li {
+		float: none;
+		width: 100%;
+	}
+}
