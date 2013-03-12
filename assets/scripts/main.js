@@ -4,7 +4,7 @@ $(function() {
 	var top = $('.qualities').offset().top;
 
 	$(window).scroll(function() {
-		if ($(window).scrollTop() >= top - 160) {
+		if ($(window).scrollTop() >= top - 107) {
 			body.addClass('scrolled');
 		}
 		else {
