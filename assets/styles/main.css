@@ -368,7 +368,7 @@ footer {
 */
 
 .scrolled {
-	padding-top: 160px;
+	padding-top: 338px;
 }
 
 .scrolled header {
@@ -420,9 +420,6 @@ footer {
 		padding-left: 10%;
 		padding-right: 10%;
 	}
-	body {
-		padding-top: 418px;
-	}
 	.scrolled header {
 		text-align: left;
 	}
@@ -443,12 +440,12 @@ footer {
 }
 
 @media all and (max-width: 700px) {
-	body {
-		padding-top: 390px;
-	}
 	header h1 {
 		font-size: 40px;
 		font-size: 4rem;
+	}
+	.scrolled {
+		padding-top: 364px;
 	}
 	.scrolled header .photo {
 		display: none;
@@ -466,8 +463,8 @@ footer {
 }
 
 @media all and (max-width: 480px) {
-	body {
-		padding-top: 363px;
+	.scrolled {
+		padding-top: 337px;
 	}
 	header, section, footer {
 		padding-left: 6%;
