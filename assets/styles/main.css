@@ -130,7 +130,8 @@ p {
 header, section, footer {
 	position: relative;
 	clear: both;
-	padding: 2em 15%;
+	padding: 2em 20%;
+	max-width: ;
 }
 
 section {
@@ -231,11 +232,6 @@ header .photo {
 header h1 {
 }
 
-header p {
-	color: #cc4154;
-	margin: .25em 0 .5em;
-}
-
 header ul {
 	padding: 0;
 	margin: 0;
@@ -247,6 +243,20 @@ header ul {
 
 	header li {
 		margin-right: .5em;
+	}
+
+.summary {
+	padding: 0 30% 2em;
+	text-align: center;
+}
+
+	.summary a {
+		color: #2a363b;
+		font-weight: bold;
+	}
+
+	.summary a:hover {
+		color: #eb6173;
 	}
 
 .qualities, .samples {
@@ -283,9 +293,10 @@ header ul {
 		color: #fff;
 		font-weight: bold;
 		text-decoration: none;
+		border-bottom: 1px dotted;
 	}
 	.accomplishments a:hover {
-		border-bottom: 1px dotted #fff;
+		color: #db949a;
 	}
 
 .samples h2 a {
@@ -360,6 +371,33 @@ footer {
 -----------------------------------------------------------------
 */
 
+#samples.scrolled header h1 {
+	font-size: 24px;
+	line-height: 60px;
+}
+
+#samples.scrolled header h1 a {
+	text-decoration: none;
+}
+
+#samples section img {
+	display: block;
+	margin: 1em auto 2em;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+}
+
+#samples section p {
+	text-align: center;
+	margin: 2.5em 0 .5em;
+}
+
+#samples section p.intro {
+	text-align: left;
+	margin: 0 0 1em;
+}
+
 /*
 -----------------------------------------------------------------
 	7. STATE RULES
@@ -368,7 +406,7 @@ footer {
 */
 
 .scrolled {
-	padding-top: 413px;
+	padding-top: 371px;
 }
 
 	#samples.scrolled {
@@ -408,10 +446,6 @@ footer {
 		margin-right: .5em;
 	}
 
-	.scrolled header p {
-		display: none;
-	}
-
 /*
 -----------------------------------------------------------------
 	8. MEDIA RULES
@@ -449,7 +483,7 @@ footer {
 		font-size: 4rem;
 	}
 	.scrolled {
-		padding-top: 364px;
+		padding-top: 358px;
 	}
 	.scrolled header .photo {
 		display: none;
@@ -468,7 +502,7 @@ footer {
 
 @media all and (max-width: 480px) {
 	.scrolled {
-		padding-top: 337px;
+		padding-top: 385px;
 	}
 	header, section, footer {
 		padding-left: 6%;
@@ -516,8 +550,7 @@ footer {
 		color: #000;
 	}
 	section.accomplishments li div,
-	.additional-skills,
-	.scrolled header p {
+	.additional-skills {
 		display: block;
 	}
 	header h1 {
