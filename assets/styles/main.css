@@ -480,3 +480,46 @@ footer {
 		width: 100%;
 	}
 }
+
+@media print {
+	body,
+	section.qualities,
+	section.qualities ul li,
+	section.accomplishments,
+	section.accomplishments li div,
+	section.skills ul li,
+	section.skills ul li h3 {
+		background: #fff;
+		color: #000;
+		font-size: 16px;
+	}
+	.scrolled {
+		padding: 0;
+	}
+	.scrolled header {
+		position: static;
+	}
+	.scrolled header h1 {
+		float: none;
+	}
+	section.accomplishments li {
+		border-color: #888;
+	}
+	section.accomplishments li h3 {
+		padding: 0;
+	}
+	section.accomplishments li a {
+		color: #000;
+	}
+	section.accomplishments li div,
+	.additional-skills,
+	.scrolled header p {
+		display: block;
+	}
+	header h1 {
+		font-size: 30px;
+	}
+	header .photo, .samples, header ul, .expand {
+		display: none;
+	}
+}
