@@ -79,7 +79,6 @@ html {
 }
 
 body {
-	padding-top: 413px;
 	background: url('images/bg.png') repeat;
 	color: #2a363b;
 	font-size: 20px;
@@ -132,19 +131,6 @@ header, section, footer {
 	position: relative;
 	clear: both;
 	padding: 2em 15%;
-}
-
-header {
-	position: fixed;
-	top: 0; left: 0;
-	width: 100%;
-	z-index: 1;
-	background: url('images/bg.png') repeat;
-	-webkit-transition: all 0.3s ease;
-	-moz-transition: all 0.3s ease;
-	-o-transition: all 0.3s ease;
-	-ms-transition: all 0.3s ease;
-	transition: all 0.3s ease;
 }
 
 section {
@@ -240,19 +226,9 @@ header .photo {
 	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%;
 	border-radius: 50%;
-	-webkit-transition: all 0.3s ease;
-	-moz-transition: all 0.3s ease;
-	-o-transition: all 0.3s ease;
-	-ms-transition: all 0.3s ease;
-	transition: all 0.3s ease;
 }
 
 header h1 {
-	-webkit-transition: all 0.3s ease;
-	-moz-transition: all 0.3s ease;
-	-o-transition: all 0.3s ease;
-	-ms-transition: all 0.3s ease;
-	transition: all 0.3s ease;
 }
 
 header p {
@@ -391,18 +367,16 @@ footer {
 -----------------------------------------------------------------
 */
 
-.preload * {
-  -webkit-transition: none !important;
-  -moz-transition: none !important;
-  -ms-transition: none !important;
-  -o-transition: none !important;
-}
-
 .scrolled {
 	padding-top: 160px;
 }
 
 .scrolled header {
+	position: fixed;
+	top: 0; left: 0;
+	width: 100%;
+	z-index: 1;
+	background: url('images/bg.png') repeat;
 	padding-top: 1em;
 	padding-bottom: 1em;
 	box-shadow: 0 1px 20px -4px #000;

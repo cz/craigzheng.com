@@ -1,10 +1,10 @@
 $(function() {
 	var body = $('body');
 	var header = $('header');
-	var top = body.offset().top;
+	var top = $('.qualities').offset().top;
 
 	$(window).scroll(function() {
-		if ($(window).scrollTop() > top) {
+		if ($(window).scrollTop() >= top - 160) {
 			body.addClass('scrolled');
 		}
 		else {
