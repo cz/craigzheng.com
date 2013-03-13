@@ -15,11 +15,12 @@ $(function() {
 	$(document).ready(function() {
 		$("body").removeClass("preload");
 
-		$('.accomplishments li').click(
+		$('.accomplishments li h3').click(
 			function(){
-				$(this).siblings('li').children('div:visible').slideToggle();
-				$(this).children('div').slideToggle();
-				$(this).toggleClass('expanded');
+				parent = $(this).parents('li');
+				parent.siblings('li').children('div:visible').slideToggle();
+				parent.children('div').slideToggle();
+				parent.toggleClass('expanded');
 			}
 		);
 		$('.skills .expand a').click(
