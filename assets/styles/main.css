@@ -380,23 +380,28 @@ footer {
 	text-decoration: none;
 }
 
-#samples section img {
-	display: block;
-	margin: 1em auto 2em;
-	-webkit-border-radius: 2px;
-	-moz-border-radius: 2px;
-	border-radius: 2px;
+#samples section {
+	border-bottom: 1px solid #d8d8d8;
 }
 
-#samples section p {
-	text-align: center;
-	margin: 2.5em 0 .5em;
-}
+	#samples section img {
+		display: block;
+		margin: 1em auto 2em;
+		-webkit-border-radius: 2px;
+		-moz-border-radius: 2px;
+		border-radius: 2px;
+	}
 
-#samples section p.intro {
-	text-align: left;
-	margin: 0 0 1em;
-}
+	#samples section p {
+		text-align: center;
+		margin: 2.5em 0 .5em;
+	}
+
+	#samples section p.intro {
+		text-align: left;
+		margin: 0 0 1em;
+		color: #5b7580;
+	}
 
 /*
 -----------------------------------------------------------------
@@ -410,7 +415,7 @@ footer {
 }
 
 	#samples.scrolled {
-		padding-top: 160px;
+		padding-top: 107px;
 	}
 
 .scrolled header {
@@ -498,6 +503,12 @@ footer {
 		float: none;
 		width: 100%;
 	}
+	#samples.scrolled header ul {
+		display: none;
+	}
+	#samples section img {
+		width: 100%;
+	}
 }
 
 @media all and (max-width: 480px) {
@@ -516,6 +527,9 @@ footer {
 	section.skills, section.skills ul, section.skills li {
 		float: none;
 		width: 100%;
+	}
+	#samples.scrolled header h1 {
+		font-size: 18px;
 	}
 }
 
