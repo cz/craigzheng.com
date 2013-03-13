@@ -499,6 +499,9 @@ footer {
 	.scrolled header li {
 		margin: 0;
 	}
+	.summary {
+		padding: 0 10% 2em;
+	}
 	footer div {
 		float: none;
 		width: 100%;
