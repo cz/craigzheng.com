@@ -34,7 +34,6 @@ $(function() {
 		// Event tracking
 		$('.action').on('click', function() {
 			var label = $(this).attr('id');
-			alert(label);
 			ga('send', 'event', 'action', 'click', label);
 		});
 	});
