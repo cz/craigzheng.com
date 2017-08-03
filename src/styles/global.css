@@ -1,0 +1,84 @@
+@import '../styles/vars.css';
+
+@font-face {
+	font-family: 'Sanchez Niu';
+	src: url('../styles/type/sanchez-niu-regular.eot');
+	src: url('../styles/type/sanchez-niu-regular.eot?#iefix') format('embedded-opentype'),
+             url('../styles/type/sanchez-niu-regular.woff2') format('woff2'),
+	     url('../styles/type/sanchez-niu-regular.woff') format('woff'),
+	     url('../styles/type/sanchez-niu-regular.ttf') format('truetype'),
+	     url('../styles/type/sanchez-niu-regular.svg#youworkforthem') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Sanchez Niu';
+	src: url('../styles/type/sanchez-niu-regular-it.eot');
+	src: url('../styles/type/sanchez-niu-regular-it.eot?#iefix') format('embedded-opentype'),
+             url('../styles/type/sanchez-niu-regular-it.woff2') format('woff2'),
+	     url('../styles/type/sanchez-niu-regular-it.woff') format('woff'),
+	     url('../styles/type/sanchez-niu-regular-it.ttf') format('truetype'),
+	     url('../styles/type/sanchez-niu-regular-it.svg#youworkforthem') format('svg');
+	font-weight: normal;
+	font-style: italic;
+}
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html {
+  font-family: 'Sanchez Niu', serif;
+	font-size: 112.5%;
+	background-color: var(--color-dark-gray);
+	color: var(--color-med-gray);
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3 {
+	color: var(--color-white);
+	font-weight: normal;
+}
+
+h1 {
+	margin: 0 0 2rem;
+	font-size: 2rem;
+}
+
+h2 {
+	margin: 0 0 1.5rem;
+	font-size: 1.5rem;
+}
+
+h3 {
+	margin: 0 0 1.25rem;
+	font-size: 1.25rem;
+}
+
+a {
+	color: #FFFFFF;
+	font-weight: bold;
+	text-decoration: none;
+	background-image: linear-gradient(rgba(185, 106, 220, 0.6), rgba(185, 106, 220, 0.6));
+	background-repeat: repeat-x;
+	background-position: 0 1.15rem;
+	background-size: 0.45em 2px;
+}
+
+p {
+	margin: 0 0 2em;
+	line-height: 2rem;
+}
+
+.main-story {
+	width: 36rem;
+	height: 100vh;
+	padding: 6rem 6rem 4rem;
+	border-right: 1px solid rgba(255, 255, 255, 0.04);
+}

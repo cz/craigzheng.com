@@ -1,0 +1,27 @@
+@import '../../styles/vars.css';
+
+.logo-mark {
+	position: absolute;
+	top: 2rem;
+	left: 2rem;
+	width: 2rem;
+	height: 2rem;
+	margin-bottom: 3rem;
+	fill: var(--color-action);
+}
+
+.mark-top {
+	opacity: 0.5;
+}
+
+.mark-left {
+	opacity: 0.3;
+}
+
+.mark-bottom {
+	opacity: 0.4;
+}
+
+.mark-slash {
+	opacity: 0.8;
+}
