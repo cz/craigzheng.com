@@ -4,4 +4,13 @@
 	position: fixed;
 	top: 2rem;
 	left: 2rem;
+
+	@media (max-width: 800px) {
+		top: 0;
+		left: 0;
+		width: 100%;
+		padding: 1rem;
+		background-color: color(var(--color-dark-gray) alpha(90%));
+		z-index: 2;
+	}
 }
