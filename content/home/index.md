@@ -5,7 +5,7 @@ title: "Hi, I'm Craig"
 
 I'm a Senior Product Designer at [Hudl](http://hudl.com).
 
-For the past two years I was lead designer on Hudl's efforts to create a unified video experience for its disparate platforms. (Case study coming soon)
+For the past two years I was lead designer on Hudl's efforts to create a [unified video experience](/hudl-video-experience/) for its disparate platforms.
 
 Before that, I designed our first [suite of basketball tools](/hudl-basketball/).
 
