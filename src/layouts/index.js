@@ -13,8 +13,7 @@ function Layout({children, location}) {
         <Helmet
           title="Craig Zheng"
           meta={[
-            { name: 'description', content: 'Sample' },
-            { name: 'keywords', content: 'sample, something' },
+            { name: "description", content: "I'm Craig Zheng, I'm a designer, and this is my website." },
           ]}
         />
         <Nav location={location.pathname}/>

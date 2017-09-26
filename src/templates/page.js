@@ -3,7 +3,7 @@ import Helmet from 'react-helmet'
 
 export default function Template({ data }) {
   const doc = data.markdownRemark;
-  const title = (doc.frontmatter.path === '/' ? 'Craig Zheng' : `Craig Zheng - ${doc.frontmatter.title}`);
+  const title = (doc.frontmatter.path === '/' ? 'Craig Zheng - Designer' : `Craig Zheng - ${doc.frontmatter.title}`);
   return (
     <div className="page">
       <Helmet title={title} />
