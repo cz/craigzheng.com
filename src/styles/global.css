@@ -41,6 +41,10 @@ html {
 	-moz-osx-font-smoothing: grayscale;
 }
 
+body {
+	margin: 0;
+}
+
 h1, h2, h3 {
 	color: var(--color-white);
 	font-weight: normal;
@@ -58,17 +62,23 @@ h2 {
 
 h3 {
 	margin: 0 0 1.25rem;
+	padding: 1.25rem 0;
 	font-size: 1.25rem;
+	border-bottom: 2px solid rgba(255, 255, 255, 0.05);
 }
 
-a {
+a:link {
 	color: #FFFFFF;
 	font-weight: bold;
 	text-decoration: none;
-	background-image: linear-gradient(rgba(185, 106, 220, 0.6), rgba(185, 106, 220, 0.6));
+	background-image: linear-gradient(color(var(--color-action) alpha(60%)), color(var(--color-action) alpha(60%)));
 	background-repeat: repeat-x;
 	background-position: 0 1.15rem;
 	background-size: 0.45em 2px;
+}
+
+a:visited {
+	color: inherit;
 }
 
 p {
@@ -76,9 +86,23 @@ p {
 	line-height: 2rem;
 }
 
-.main-story {
-	width: 36rem;
-	height: 100vh;
-	padding: 6rem 6rem 4rem;
-	border-right: 1px solid rgba(255, 255, 255, 0.04);
+img {
+	max-width: 100%;
+}
+
+.twitter-tweet {
+	padding-bottom: 2rem;
+}
+
+.container {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	max-width: 32rem;
+	margin: 5rem auto 2rem;
+}
+
+.page {
+	flex-grow: 1;
+	padding: 2rem;
 }

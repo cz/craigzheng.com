@@ -2,30 +2,31 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 import Helmet from 'react-helmet'
-import Logo from '../components/logo/logo'
+import Nav from '../components/nav/nav'
 
 import '../styles/global.css'
+import '../styles/gatsby.css'
 
-const TemplateWrapper = ({
-  children
-}) => (
-    <div>
-      <Helmet
-        title="Craig Zheng"
-        meta={[
-          { name: 'description', content: 'Sample' },
-          { name: 'keywords', content: 'sample, something' },
-        ]}
-      />
-      <div className="main-story">
-        <Logo />
-        {children()}
+function Layout({children, location}) {
+    return (
+      <div>
+        <Helmet
+          title="Craig Zheng"
+          meta={[
+            { name: 'description', content: 'Sample' },
+            { name: 'keywords', content: 'sample, something' },
+          ]}
+        />
+        <Nav location={location.pathname}/>
+        <div className="container">
+          {children()}
+        </div>
       </div>
-    </div>
-  )
+    )
+}
 
-TemplateWrapper.propTypes = {
+Layout.propTypes = {
   children: PropTypes.func,
 }
 
-export default TemplateWrapper
+export default Layout
